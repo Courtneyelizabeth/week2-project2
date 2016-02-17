@@ -4,7 +4,7 @@
 var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
 for(i=0; i<livingRoom.length; i++) {   
     console.log(livingRoom[i]);
-} 
+};
 // 2. Using a loop, log numbers 22-33 in the console.
 for(i=22; i<=33; i++) {
 	console.log([i]);
@@ -487,6 +487,21 @@ var slaying = true;
 var youHit = Math.floor(Math.random() * 2);
 var damageThisRound = Math.floor(Math.random()*5 + 1);
 var totalDamage = 0;
+
+while(slaying === true){
+  if(youHit === 1){
+    console.log("Nice hit!");
+    totalDamage =+ damageThisRound;
+      if(totalDamage >= 4){
+        console.log("You win!");
+        slaying=== false;
+      }
+    }
+   else (youHit === 0){
+      console.log("You lose.")
+    }
+  
+};
 
 while(slaying === true){
   if(youHit === 1){
